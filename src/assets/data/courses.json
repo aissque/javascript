@@ -1,0 +1,18 @@
+[
+  {
+    "id": "course-1",
+    "subjectId": "subject-1",
+    "title": "Algebra Essentials",
+    "description": "Master equations, functions, and problem-solving.",
+    "level": "High",
+    "durationWeeks": 6
+  },
+  {
+    "id": "course-2",
+    "subjectId": "subject-3",
+    "title": "Fluent English Speaking",
+    "description": "Build confidence with weekly conversation labs.",
+    "level": "Middle",
+    "durationWeeks": 8
+  }
+]

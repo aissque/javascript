@@ -1,0 +1,15 @@
+<section class="mt-10">
+  <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <div>
+      <h1 class="text-2xl font-semibold">Choose your teacher</h1>
+      <p class="text-sm text-slate-400">Pick an AI mentor or future human coach for your learning style.</p>
+    </div>
+    <div class="px-4 py-2 rounded-full bg-indigo-500/20 text-indigo-300 text-sm">Step 3/6</div>
+  </div>
+  <div class="mt-6 p-5 rounded-2xl bg-gradient-to-r from-indigo-500/20 to-cyan-500/10 border border-indigo-400/40">
+    <p class="text-sm text-indigo-200">AI recommendation: Based on your goals, we suggest a blended AI + human mentor for rapid progress.</p>
+  </div>
+  <div class="mt-6 grid gap-5 md:grid-cols-2">
+    <app-teacher-card *ngFor="let teacher of teachers" [teacher]="teacher"></app-teacher-card>
+  </div>
+</section>

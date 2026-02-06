@@ -1,0 +1,9 @@
+[
+  {
+    "id": "student-1",
+    "userId": "user-1",
+    "level": "high",
+    "goals": ["Improve grades", "Exam preparation"],
+    "preferences": ["Visual lessons", "Short quizzes"]
+  }
+]

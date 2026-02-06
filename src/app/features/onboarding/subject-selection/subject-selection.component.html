@@ -1,0 +1,20 @@
+<section class="mt-10">
+  <div class="flex items-center justify-between">
+    <div>
+      <h1 class="text-2xl font-semibold">Choose your subjects</h1>
+      <p class="text-sm text-slate-400">Select the subjects you want to master with AI guidance.</p>
+    </div>
+    <div class="px-4 py-2 rounded-full bg-indigo-500/20 text-indigo-300 text-sm">Step 1/6</div>
+  </div>
+  <div class="mt-6 grid gap-4 md:grid-cols-3">
+    <button
+      *ngFor="let subject of subjects"
+      (click)="toggle(subject)"
+      class="text-left p-5 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-indigo-400 transition"
+      [class.border-indigo-400]="selected.includes(subject)"
+    >
+      <p class="text-lg font-semibold">{{ subject.name }}</p>
+      <p class="text-sm text-slate-400">Levels: {{ subject.levels.join(', ') }}</p>
+    </button>
+  </div>
+</section>

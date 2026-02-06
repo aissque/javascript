@@ -1,0 +1,34 @@
+<section class="mt-10">
+  <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+    <div>
+      <h1 class="text-3xl font-semibold">Subscription plans</h1>
+      <p class="text-sm text-slate-400">Flexible plans for AI-only or hybrid learning.</p>
+    </div>
+    <div class="px-6 py-3 rounded-full bg-slate-900/60 border border-slate-800 text-sm">
+      Estimated weekly: <span class="text-indigo-300 font-semibold">€{{ estimatedPrice | number:'1.0-0' }}</span>
+    </div>
+  </div>
+  <div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+    <div *ngFor="let plan of plans" class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60">
+      <p class="text-lg font-semibold">{{ plan.name }}</p>
+      <ul class="mt-4 space-y-2 text-sm text-slate-300">
+        <li *ngFor="let feature of plan.features">• {{ feature }}</li>
+      </ul>
+      <button class="mt-6 w-full rounded-xl bg-indigo-500 py-2 text-sm font-medium">Select</button>
+    </div>
+  </div>
+  <div class="mt-8 grid gap-4 md:grid-cols-3">
+    <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60">
+      <p class="text-sm font-semibold">Class type</p>
+      <p class="text-xs text-slate-400">{{ pricingInput.classType | titlecase }}</p>
+    </div>
+    <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60">
+      <p class="text-sm font-semibold">Mode</p>
+      <p class="text-xs text-slate-400">{{ pricingInput.mode | titlecase }}</p>
+    </div>
+    <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60">
+      <p class="text-sm font-semibold">Teacher</p>
+      <p class="text-xs text-slate-400">{{ pricingInput.teacherType | titlecase }}</p>
+    </div>
+  </div>
+</section>

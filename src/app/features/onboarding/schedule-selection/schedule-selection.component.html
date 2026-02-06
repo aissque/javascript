@@ -1,0 +1,15 @@
+<section class="mt-10">
+  <div class="flex items-center justify-between">
+    <div>
+      <h1 class="text-2xl font-semibold">Set your schedule</h1>
+      <p class="text-sm text-slate-400">Select preferred session slots for the week.</p>
+    </div>
+    <div class="px-4 py-2 rounded-full bg-indigo-500/20 text-indigo-300 text-sm">Step 4/6</div>
+  </div>
+  <div class="mt-6 grid gap-4 md:grid-cols-5">
+    <div *ngFor="let slot of slots" class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+      <p class="text-sm font-medium">{{ slot }}</p>
+      <p class="text-xs text-slate-400">Mon-Fri</p>
+    </div>
+  </div>
+</section>

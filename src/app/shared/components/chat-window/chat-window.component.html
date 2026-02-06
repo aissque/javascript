@@ -1,0 +1,11 @@
+<div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-4 h-full flex flex-col">
+  <div class="flex-1 space-y-3 overflow-auto">
+    <div *ngFor="let message of messages" class="p-3 rounded-xl bg-slate-800/70 text-sm">
+      <p class="text-xs text-slate-400">{{ message.senderId }} • {{ message.createdAt | date:'shortTime' }}</p>
+      <p class="text-slate-200">{{ message.content }}</p>
+    </div>
+  </div>
+  <div class="pt-3">
+    <input type="text" placeholder="Type a message" class="w-full rounded-full bg-slate-800 px-4 py-2 text-sm text-slate-200" />
+  </div>
+</div>

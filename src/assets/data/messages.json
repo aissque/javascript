@@ -1,0 +1,16 @@
+[
+  {
+    "id": "msg-1",
+    "sessionId": "session-1",
+    "senderId": "teacher-1",
+    "content": "Welcome to the live session!",
+    "createdAt": "2025-02-07T10:01:00Z"
+  },
+  {
+    "id": "msg-2",
+    "sessionId": "session-1",
+    "senderId": "student-1",
+    "content": "Ready to learn!",
+    "createdAt": "2025-02-07T10:02:00Z"
+  }
+]

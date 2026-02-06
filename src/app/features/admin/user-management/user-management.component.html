@@ -1,0 +1,10 @@
+<section class="mt-10">
+  <h2 class="text-2xl font-semibold">User management</h2>
+  <div class="mt-6 grid gap-4 md:grid-cols-2">
+    <div *ngFor="let user of users" class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60">
+      <p class="text-sm font-semibold">{{ user.name }}</p>
+      <p class="text-xs text-slate-400">Role: {{ user.role }}</p>
+      <p class="text-xs text-slate-500">{{ user.email }}</p>
+    </div>
+  </div>
+</section>

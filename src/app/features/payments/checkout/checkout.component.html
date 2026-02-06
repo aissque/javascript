@@ -1,0 +1,25 @@
+<section class="mt-10">
+  <h1 class="text-3xl font-semibold">Checkout</h1>
+  <p class="text-sm text-slate-400 mt-2">Complete your subscription and view payment history.</p>
+  <div class="mt-6 grid gap-6 lg:grid-cols-2">
+    <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/60">
+      <h3 class="text-lg font-semibold">Payment details</h3>
+      <div class="mt-4 space-y-3">
+        <input type="text" placeholder="Cardholder name" class="w-full rounded-xl bg-slate-800 px-4 py-2 text-sm" />
+        <input type="text" placeholder="Card number" class="w-full rounded-xl bg-slate-800 px-4 py-2 text-sm" />
+        <div class="grid grid-cols-2 gap-3">
+          <input type="text" placeholder="MM/YY" class="w-full rounded-xl bg-slate-800 px-4 py-2 text-sm" />
+          <input type="text" placeholder="CVC" class="w-full rounded-xl bg-slate-800 px-4 py-2 text-sm" />
+        </div>
+      </div>
+      <button class="mt-6 w-full rounded-xl bg-indigo-500 py-3 text-sm font-medium">Pay now</button>
+    </div>
+    <div class="space-y-4">
+      <h3 class="text-lg font-semibold">Payment history</h3>
+      <div *ngFor="let payment of history" class="p-4 rounded-2xl border border-slate-800 bg-slate-900/60">
+        <p class="text-sm font-semibold">€{{ payment.amount }} • {{ payment.status }}</p>
+        <p class="text-xs text-slate-400">{{ payment.paidAt | date:'medium' }}</p>
+      </div>
+    </div>
+  </div>
+</section>

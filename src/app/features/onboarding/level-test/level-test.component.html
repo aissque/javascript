@@ -1,0 +1,15 @@
+<section class="mt-10">
+  <div class="flex items-center justify-between">
+    <div>
+      <h1 class="text-2xl font-semibold">Quick level test</h1>
+      <p class="text-sm text-slate-400">A short diagnostic to personalize your path.</p>
+    </div>
+    <div class="px-4 py-2 rounded-full bg-indigo-500/20 text-indigo-300 text-sm">Step 2/6</div>
+  </div>
+  <div class="mt-6 grid gap-4">
+    <div *ngFor="let question of questions" class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60">
+      <p class="text-sm text-slate-400">{{ question.prompt }}</p>
+      <input type="text" class="mt-3 w-full rounded-xl bg-slate-800 px-4 py-2 text-sm" placeholder="Your answer" />
+    </div>
+  </div>
+</section>

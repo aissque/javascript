@@ -1,0 +1,22 @@
+[
+  {
+    "id": "user-1",
+    "name": "Lina Martin",
+    "role": "student",
+    "email": "lina@student.ai",
+    "avatarUrl": "assets/img/student-1.png"
+  },
+  {
+    "id": "user-2",
+    "name": "Coach Neo",
+    "role": "teacher",
+    "email": "neo@teacher.ai",
+    "avatarUrl": "assets/img/teacher-1.png"
+  },
+  {
+    "id": "user-3",
+    "name": "Admin",
+    "role": "admin",
+    "email": "admin@airedu.ai"
+  }
+]

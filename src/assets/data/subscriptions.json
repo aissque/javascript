@@ -1,0 +1,9 @@
+[
+  {
+    "id": "sub-1",
+    "userId": "user-1",
+    "plan": "Standard",
+    "status": "trial",
+    "renewalDate": "2025-03-01"
+  }
+]

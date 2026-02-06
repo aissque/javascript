@@ -1,0 +1,16 @@
+[
+  {
+    "id": "lesson-1",
+    "courseId": "course-1",
+    "title": "Linear equations",
+    "objectives": ["Solve one-step equations", "Graph lines"],
+    "durationMinutes": 45
+  },
+  {
+    "id": "lesson-2",
+    "courseId": "course-2",
+    "title": "Everyday dialogues",
+    "objectives": ["Ordering food", "Asking for directions"],
+    "durationMinutes": 40
+  }
+]
