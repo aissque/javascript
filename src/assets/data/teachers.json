@@ -1,0 +1,24 @@
+[
+  {
+    "id": "teacher-1",
+    "userId": "user-2",
+    "subjects": ["Mathématiques", "Sciences"],
+    "rating": 4.8,
+    "teachingStyle": "Project-based, visual reasoning",
+    "availability": ["Mon 10:00", "Wed 14:00", "Fri 16:00"],
+    "pricePerHour": 18,
+    "isAi": true,
+    "avatarUrl": "assets/img/ai-mentor.png"
+  },
+  {
+    "id": "teacher-2",
+    "userId": "coach-1",
+    "subjects": ["English", "Français"],
+    "rating": 4.9,
+    "teachingStyle": "Conversational, confidence-driven",
+    "availability": ["Tue 09:00", "Thu 15:00"],
+    "pricePerHour": 28,
+    "isAi": false,
+    "avatarUrl": "assets/img/teacher-2.png"
+  }
+]

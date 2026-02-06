@@ -1,0 +1,32 @@
+[
+  {
+    "id": "subject-1",
+    "name": "Mathématiques",
+    "category": "STEM",
+    "levels": ["Primary", "Middle", "High", "University"]
+  },
+  {
+    "id": "subject-2",
+    "name": "Français",
+    "category": "Languages",
+    "levels": ["Primary", "Middle", "High"]
+  },
+  {
+    "id": "subject-3",
+    "name": "English",
+    "category": "Languages",
+    "levels": ["Primary", "Middle", "High", "Professional"]
+  },
+  {
+    "id": "subject-4",
+    "name": "Sciences",
+    "category": "STEM",
+    "levels": ["Primary", "Middle", "High"]
+  },
+  {
+    "id": "subject-5",
+    "name": "Programming",
+    "category": "STEM",
+    "levels": ["High", "University", "Professional"]
+  }
+]

@@ -1,0 +1,21 @@
+<section class="mt-10 space-y-6">
+  <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+    <div>
+      <h1 class="text-3xl font-semibold">Live session</h1>
+      <p class="text-sm text-slate-400">AI-powered classroom with chat, whiteboard, and video grid.</p>
+    </div>
+    <div class="flex items-center gap-3 text-sm text-slate-400">
+      <span>Session: {{ session?.id }}</span>
+      <span>Mode: {{ session?.mode }}</span>
+      <span>Duration: {{ session?.durationMinutes }} min</span>
+    </div>
+  </div>
+  <div class="grid gap-6 lg:grid-cols-3">
+    <div class="lg:col-span-2 space-y-4">
+      <app-video-room [participants]="participants"></app-video-room>
+      <app-whiteboard></app-whiteboard>
+      <app-audio-controls></app-audio-controls>
+    </div>
+    <app-chat-window [messages]="messages"></app-chat-window>
+  </div>
+</section>

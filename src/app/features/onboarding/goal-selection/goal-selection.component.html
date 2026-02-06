@@ -1,0 +1,15 @@
+<section class="mt-10">
+  <div class="flex items-center justify-between">
+    <div>
+      <h1 class="text-2xl font-semibold">Define your learning goals</h1>
+      <p class="text-sm text-slate-400">We will personalize sessions to match your outcomes.</p>
+    </div>
+    <div class="px-4 py-2 rounded-full bg-indigo-500/20 text-indigo-300 text-sm">Step 5/6</div>
+  </div>
+  <div class="mt-6 grid gap-4 md:grid-cols-2">
+    <div *ngFor="let goal of goals" class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60">
+      <p class="text-sm font-semibold">{{ goal }}</p>
+      <p class="text-xs text-slate-400 mt-2">AI will track progress for this goal.</p>
+    </div>
+  </div>
+</section>

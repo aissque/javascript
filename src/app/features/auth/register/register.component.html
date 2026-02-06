@@ -1,0 +1,16 @@
+<section class="max-w-2xl mx-auto mt-12 bg-slate-900/70 border border-slate-800 rounded-3xl p-8">
+  <h1 class="text-2xl font-semibold">Create your account</h1>
+  <p class="text-sm text-slate-400 mt-2">Set up your AI learning profile in minutes.</p>
+  <div class="mt-6 grid gap-4 md:grid-cols-2">
+    <input [(ngModel)]="name" type="text" placeholder="Full name" class="w-full rounded-xl bg-slate-800 px-4 py-3 text-sm" />
+    <input [(ngModel)]="email" type="email" placeholder="Email" class="w-full rounded-xl bg-slate-800 px-4 py-3 text-sm" />
+    <input [(ngModel)]="password" type="password" placeholder="Password" class="w-full rounded-xl bg-slate-800 px-4 py-3 text-sm" />
+    <select [(ngModel)]="role" class="w-full rounded-xl bg-slate-800 px-4 py-3 text-sm">
+      <option value="student">Student</option>
+      <option value="teacher">Teacher</option>
+      <option value="parent">Parent</option>
+    </select>
+  </div>
+  <button (click)="submit()" class="mt-6 w-full rounded-xl bg-indigo-500 py-3 text-sm font-medium">Register</button>
+  <p class="text-sm text-slate-400 mt-4">Already have an account? <a routerLink="/login" class="text-indigo-300">Login</a></p>
+</section>

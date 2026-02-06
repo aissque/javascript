@@ -1,0 +1,36 @@
+<section class="mt-10 space-y-6">
+  <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+    <div>
+      <h1 class="text-3xl font-semibold">Student dashboard</h1>
+      <p class="text-sm text-slate-400">Personalized sessions, homework, and AI insights in one place.</p>
+    </div>
+    <div class="flex gap-3">
+      <button class="px-4 py-2 rounded-full bg-slate-800 text-sm">View plan</button>
+      <button class="px-4 py-2 rounded-full bg-indigo-500 text-sm">Start session</button>
+    </div>
+  </div>
+  <div class="grid gap-4 md:grid-cols-3">
+    <app-progress-chart [progress]="72"></app-progress-chart>
+    <app-progress-chart [progress]="58"></app-progress-chart>
+    <app-progress-chart [progress]="84"></app-progress-chart>
+  </div>
+  <div class="grid gap-6 lg:grid-cols-3">
+    <div class="lg:col-span-2 space-y-4">
+      <h2 class="text-xl font-semibold">Today's sessions</h2>
+      <div class="grid gap-4 md:grid-cols-2">
+        <app-session-card *ngFor="let session of sessions" [session]="session"></app-session-card>
+      </div>
+    </div>
+    <div class="space-y-4">
+      <h2 class="text-xl font-semibold">AI feedback</h2>
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 text-sm text-slate-300">
+        <p>Great momentum on algebra. Next session we will master quadratic equations with visual guides.</p>
+        <p class="mt-4 text-xs text-slate-500">Updated 5 min ago</p>
+      </div>
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 text-sm text-slate-300">
+        <p>Essay structure improved. Focus next on persuasive openings.</p>
+        <p class="mt-4 text-xs text-slate-500">Updated 20 min ago</p>
+      </div>
+    </div>
+  </div>
+</section>

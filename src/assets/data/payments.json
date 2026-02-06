@@ -1,0 +1,10 @@
+[
+  {
+    "id": "pay-1",
+    "userId": "user-1",
+    "amount": 120,
+    "currency": "EUR",
+    "status": "success",
+    "paidAt": "2025-02-05T09:30:00Z"
+  }
+]

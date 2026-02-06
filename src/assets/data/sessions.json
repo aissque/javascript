@@ -1,0 +1,20 @@
+[
+  {
+    "id": "session-1",
+    "courseId": "course-1",
+    "teacherId": "teacher-1",
+    "studentIds": ["student-1"],
+    "mode": "video",
+    "scheduledAt": "2025-02-07T10:00:00Z",
+    "durationMinutes": 60
+  },
+  {
+    "id": "session-2",
+    "courseId": "course-2",
+    "teacherId": "teacher-2",
+    "studentIds": ["student-1"],
+    "mode": "audio",
+    "scheduledAt": "2025-02-07T14:00:00Z",
+    "durationMinutes": 45
+  }
+]

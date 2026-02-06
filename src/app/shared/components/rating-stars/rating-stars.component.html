@@ -1,0 +1,9 @@
+<div class="flex gap-1">
+  <span
+    *ngFor="let star of stars"
+    class="text-amber-400"
+    [class.opacity-40]="star > rating"
+  >
+    ★
+  </span>
+</div>
