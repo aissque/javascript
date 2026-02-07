@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-level-test',
+  standalone: false,
   templateUrl: './level-test.component.html',
   styleUrls: ['./level-test.component.scss']
 })

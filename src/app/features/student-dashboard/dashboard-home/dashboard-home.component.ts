@@ -4,6 +4,7 @@ import { NotificationService } from '../../../core/services/notification.service
 
 @Component({
   selector: 'app-dashboard-home',
+  standalone: false,
   templateUrl: './dashboard-home.component.html',
   styleUrls: ['./dashboard-home.component.scss']
 })

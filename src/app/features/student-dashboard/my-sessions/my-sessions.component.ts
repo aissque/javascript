@@ -3,6 +3,7 @@ import { DataService, Session } from '../../../core/services/data.service';
 
 @Component({
   selector: 'app-my-sessions',
+  standalone: false,
   templateUrl: './my-sessions.component.html',
   styleUrls: ['./my-sessions.component.scss']
 })

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-trial-session',
+  standalone: false,
   templateUrl: './trial-session.component.html',
   styleUrls: ['./trial-session.component.scss']
 })

@@ -124,7 +124,9 @@ export class DataService {
 
     return this.http.get<DataStore[T]>(`${this.basePath}/${key}.json`).pipe(
       delay(400),
-      tap((data) => (this.cache[key] = data))
+      tap((data: DataStore[T]) => {
+        this.cache[key] = data;
+      })
     );
   }
 

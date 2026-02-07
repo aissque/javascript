@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ai-management',
+  standalone: false,
   templateUrl: './ai-management.component.html',
   styleUrls: ['./ai-management.component.scss']
 })

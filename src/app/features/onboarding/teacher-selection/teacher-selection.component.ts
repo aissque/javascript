@@ -3,6 +3,7 @@ import { DataService, TeacherProfile } from '../../../core/services/data.service
 
 @Component({
   selector: 'app-teacher-selection',
+  standalone: false,
   templateUrl: './teacher-selection.component.html',
   styleUrls: ['./teacher-selection.component.scss']
 })
