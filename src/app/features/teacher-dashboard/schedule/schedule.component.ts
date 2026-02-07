@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-teacher-schedule',
+  standalone: false,
   templateUrl: './schedule.component.html',
   styleUrls: ['./schedule.component.scss']
 })

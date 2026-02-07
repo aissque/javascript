@@ -3,6 +3,7 @@ import { DataService, User } from '../../../core/services/data.service';
 
 @Component({
   selector: 'app-user-management',
+  standalone: false,
   templateUrl: './user-management.component.html',
   styleUrls: ['./user-management.component.scss']
 })

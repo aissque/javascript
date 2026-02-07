@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-goal-selection',
+  standalone: false,
   templateUrl: './goal-selection.component.html',
   styleUrls: ['./goal-selection.component.scss']
 })

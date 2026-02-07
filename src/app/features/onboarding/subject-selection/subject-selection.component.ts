@@ -3,6 +3,7 @@ import { DataService, Subject } from '../../../core/services/data.service';
 
 @Component({
   selector: 'app-subject-selection',
+  standalone: false,
   templateUrl: './subject-selection.component.html',
   styleUrls: ['./subject-selection.component.scss']
 })

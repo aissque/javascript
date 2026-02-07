@@ -3,6 +3,7 @@ import { Course, DataService } from '../../../core/services/data.service';
 
 @Component({
   selector: 'app-course-management',
+  standalone: false,
   templateUrl: './course-management.component.html',
   styleUrls: ['./course-management.component.scss']
 })

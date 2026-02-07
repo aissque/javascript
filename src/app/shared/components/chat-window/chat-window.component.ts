@@ -3,6 +3,7 @@ import { Message } from '../../../core/services/data.service';
 
 @Component({
   selector: 'app-chat-window',
+  standalone: false,
   templateUrl: './chat-window.component.html',
   styleUrls: ['./chat-window.component.scss']
 })

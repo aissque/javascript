@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-whiteboard',
+  standalone: false,
   templateUrl: './whiteboard.component.html',
   styleUrls: ['./whiteboard.component.scss']
 })

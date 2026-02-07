@@ -3,6 +3,7 @@ import { DataService, StudentProfile } from '../../../core/services/data.service
 
 @Component({
   selector: 'app-student-list',
+  standalone: false,
   templateUrl: './student-list.component.html',
   styleUrls: ['./student-list.component.scss']
 })

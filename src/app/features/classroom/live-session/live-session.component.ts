@@ -5,6 +5,7 @@ import { RealtimeService } from '../../../core/services/realtime.service';
 
 @Component({
   selector: 'app-live-session',
+  standalone: false,
   templateUrl: './live-session.component.html',
   styleUrls: ['./live-session.component.scss']
 })

@@ -4,6 +4,7 @@ import { Payment } from '../../../core/services/data.service';
 
 @Component({
   selector: 'app-checkout',
+  standalone: false,
   templateUrl: './checkout.component.html',
   styleUrls: ['./checkout.component.scss']
 })

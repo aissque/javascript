@@ -3,6 +3,7 @@ import { PaymentService, PricingInput } from '../../../core/services/payment.ser
 
 @Component({
   selector: 'app-subscription',
+  standalone: false,
   templateUrl: './subscription.component.html',
   styleUrls: ['./subscription.component.scss']
 })

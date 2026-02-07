@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-attendance',
+  standalone: false,
   templateUrl: './attendance.component.html',
   styleUrls: ['./attendance.component.scss']
 })

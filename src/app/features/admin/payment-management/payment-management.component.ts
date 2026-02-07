@@ -3,6 +3,7 @@ import { DataService, Payment } from '../../../core/services/data.service';
 
 @Component({
   selector: 'app-payment-management',
+  standalone: false,
   templateUrl: './payment-management.component.html',
   styleUrls: ['./payment-management.component.scss']
 })
